@@ -2,6 +2,29 @@
 layout: base
 ---
 
-    <div class="jumbotron">
-        <h1>Terminal Page</h1>
+<h1>{{ page.question }}</h1>
+{{ content }}
+
+<div class="panel panel-default">
+    <div class="panel-heading">{{ page.question }}</div>
+    <div class="panel-body">
+        <div class="row marketing">
+            <div class="col-lg-4">
+                <h4><a href="#">Yes</a></h4>
+            </div>
+            <div class="col-lg-4">
+                <h4><a href="#">No</a></h4>
+            </div>
+            <div class="col-lg-4">
+                <h4><a href="#">Don't know</a></h4>
+            </div>
+        </div>
     </div>
+</div>
+
+<h2>Related topics</h2>
+<ul>
+{% for topic in page.topics %}
+    <li><a href="#">{{ topic }}</a></li>
+{% endfor %}
+</ul>

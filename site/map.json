@@ -58,15 +58,18 @@
     },
     "14" : {
         "title" : "Is there costed HRH plan, integrated with the national health plan?",
-        "links" : [5, 6, 7]
+        "links" : [5, 6, 7],
+        "page" : "content/hrh_plan.html"
     },
     "15" : {
         "title" : "Are there oversight mechanisms in place? (Finances, Policy, Coordination)",
-        "links" : []
+        "links" : [],
+        "page" : "content/oversight.html"
     },
     "16" : {
         "title" : "Does my HRIS allow me to know what I need to know?",
-        "links" : []
+        "links" : [],
+        "page" : "content/hris.html"
     },
     "17" : {
         "title" : "Are HRH optimally distributed?",
