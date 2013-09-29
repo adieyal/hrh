@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+    <div class="jumbotron">
+        <h1>{{ page.title }}</h1>
+        <!--<p><a class="btn btn-lg btn-success" href="#">Sign up today</a></p>-->
+    </div>
+
+  
+    {% for question in page.questions %}
+        {% cycle 'add rows': '<div class="row marketing">', nil, nil %}
+        <div class="col-lg-4">
+            <h4>{{ question.title }}</h4>
+            <p>{{ question.text }}</p>
+        </div>
+        {% cycle 'close rows': nil, nil, '</div>' %}
+    {% endfor %}
+    {% cycle 'close rows': nil, '</div>', '</div>' %}

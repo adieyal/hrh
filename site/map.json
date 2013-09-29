@@ -1,0 +1,103 @@
+{
+    "0" : {
+        "title" : "How do I improve the quality of my health workforce",
+        "links" : [1, 2, 3]
+    },
+    "1" : {
+        "title" : "How do I get more health workers?",
+        "links" : [4, 13]
+    },
+    "2" : {
+        "title" : "How do I improve the quality of my healthworkforce?",
+        "links" : [18, 22, 23, 24, 15]
+    },
+    "3" : {
+        "title" : "How do I retain health workers?",
+        "links" : []
+    },
+    "4" : {
+        "title" : "My existing workforce is doing OK. How do I train more?",
+        "links" : [14, 8, 9, 10, 11]
+    },
+    "5" : {
+        "title" : "Does it include skills targets?",
+        "links" : [12]
+    },
+    "6" : {
+        "title" : "Is it based on demand/needs assessment?",
+        "links" : []
+    },
+    "7" : {
+        "title" : "Where can you access to help to assess and develop your HRH plan?",
+        "text" : "Tool: HRH workforce planning tool",
+        "links" : []
+    },
+    "8" : {
+        "title" : "Do you have financial resources to deliver the plan?",
+        "links" : []
+    },
+    "9" : {
+        "title" : "Do you have capacity to train enough new recruits?",
+        "links" : []
+    },
+    "10" : {
+        "title" : "Do your education institutions provide good quality training and good quality health workers?",
+        "links" : []
+    },
+    "11" : {
+        "title" : "Do recruits have jobs to go to?",
+        "links" : []
+    },
+    "12" : {
+        "title" : "Does the workforce have the right skills mix?",
+        "links" : []
+    },
+    "13" : {
+        "title" : "Are you making the most of your existing health workers?",
+        "links" : [14, 15, 16, 17, 18, 12, 19, 20, 21]
+    },
+    "14" : {
+        "title" : "Is there costed HRH plan, integrated with the national health plan?",
+        "links" : [5, 6, 7]
+    },
+    "15" : {
+        "title" : "Are there oversight mechanisms in place? (Finances, Policy, Coordination)",
+        "links" : []
+    },
+    "16" : {
+        "title" : "Does my HRIS allow me to know what I need to know?",
+        "links" : []
+    },
+    "17" : {
+        "title" : "Are HRH optimally distributed?",
+        "links" : []
+    },
+    "18" : {
+        "title" : "Are HRH performing well?",
+        "links" : []
+    },
+    "19" : {
+        "title" : "Are graduates employed?",
+        "links" : []
+    },
+    "20" : {
+        "title" : "Do you have issues with migration",
+        "links" : []
+    },
+    "21" : {
+        "title" : "Do HRH have the right competences?",
+        "links" : []
+    },
+    "22" : {
+        "title" : "Do health workers have the tools and resources that they need to deliver expected services?",
+        "links" : []
+    },
+    "23" : {
+        "title" : "Do you have established accountability mechanisms?",
+        "links" : []
+    },
+    "24" : {
+        "title" : "Do your education institutions provide good quality training and good quality health workers?",
+        "links" : []
+    }
+}
