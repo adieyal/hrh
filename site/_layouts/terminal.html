@@ -5,26 +5,46 @@ layout: base
 <h1>{{ page.question }}</h1>
 {{ content }}
 
-<div class="panel panel-default">
+<div class="panel panel-default top-buffer">
     <div class="panel-heading">{{ page.question }}</div>
     <div class="panel-body">
         <div class="row marketing">
             <div class="col-lg-4">
-                <h4><a href="#">Yes</a></h4>
+                <h4><a href="{{ page.links.qyes }}">Yes</a></h4>
             </div>
             <div class="col-lg-4">
-                <h4><a href="#">No</a></h4>
+                <h4><a href="{{ page.links.qno }}">No</a></h4>
             </div>
             <div class="col-lg-4">
-                <h4><a href="#">Don't know</a></h4>
+                <h4><a href="{{ page.links.qdontknow }}">Don't know</a></h4>
             </div>
         </div>
     </div>
 </div>
 
-<h2>Related topics</h2>
-<ul>
-{% for topic in page.topics %}
-    <li><a href="#">{{ topic }}</a></li>
-{% endfor %}
-</ul>
+<div class="col-lg-6">
+    {% if page.topics %}
+        <div class="contextbox">
+        <h2>Related topics</h2>
+        <ul>
+        {% for topic in page.topics %}
+            <li><a href="#">{{ topic }}</a></li>
+        {% endfor %}
+        </ul>
+        </div>
+    {% endif %}
+    </div>
+    <div class="col-lg-6">
+    {% if page.resources %}
+        <div class="contextbox">
+        <h2>Resources</h2>
+        <ul>
+        {% for resource in page.resources %}
+            <li><a href="#">{{ resource }}</a></li>
+        {% endfor %}
+        </ul>
+        </div>
+    {% endif %}
+    </div>
+</div>
+
