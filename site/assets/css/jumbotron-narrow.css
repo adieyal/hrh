@@ -11,8 +11,16 @@ body {
 .top-buffer { margin-top:20px; }
 
 .contextbox {
-    border: solid thin black;
-    padding: 5px;
+    border-left: solid black;
+    margin: 40px 0;
+}
+
+.contextbox h4 {
+    padding 0 5px;
+}
+
+.contextbox p {
+    line-height:15px; 
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -87,4 +95,8 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+a:visited {
+    color:#96B8D6;
 }
