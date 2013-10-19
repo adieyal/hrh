@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 from glob import glob
 
 def render_link_page(el):
@@ -39,7 +40,7 @@ question: %(title)s
 for html in glob("*.html"):
     os.remove(html)
     
-graph = json.load(open("map.json"))
+graph = json.load(open(sys.argv[1]))
 stack = ["0"]
 
 while len(stack) > 0:
