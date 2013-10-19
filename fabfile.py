@@ -7,5 +7,5 @@ env.hosts = ['197.221.34.5:2224']
 
 def deploy():
     local("jekyll build")
-    rsync_project("/var/www/hrh.burgercom.co.za/", "_site/", delete=True)
+    rsync_project("/var/www/hrh.burgercom.co.za/", "site/_site/", delete=True)
 
