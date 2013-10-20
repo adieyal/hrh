@@ -1,7 +1,7 @@
 {
     "0" : {
         "title" : "Health Workforce Diagnostic Platform (HWDP)",
-        "links" : [1, 2, 3]
+        "links" : [13, 2, 3]
     },
     "1" : {
         "title" : "How do I get more health workers?",
@@ -17,7 +17,7 @@
     },
     "4" : {
         "title" : "My existing workforce is doing OK. How do I train more?",
-        "links" : [14, 8, 9, 10, 11]
+        "links" : [14, 9, 10, 11]
     },
     "5" : {
         "title" : "Does it include skills targets?",
@@ -54,7 +54,21 @@
     },
     "13" : {
         "title" : "Are you making the most of your existing health workers?",
-        "links" : [14, 15, 16, 17, 18, 12, 19, 20, 21]
+        "links" : [14, 15, 16, 17, 18, 12, 19, 20, 21],
+        "decisionbox" : {
+            "yes" : "4.html",
+            "no" : "#",
+            "dontknow" : "#"
+        },
+        "topics" : [
+            { "title" : "How do I train more health workers?", "url" : "#" },
+            { "title" : "How do I retain existing health workers?", "url" : "#" },
+            { "title" : "How do I improve the quality of existing health workers?", "url" : "#" }
+        ],
+        "resources" : [
+            { "title" : "Relevant documents/tools", "url" : "#" },
+            { "title" : "Case studies", "url" : "#" }
+        ]
     },
     "14" : {
         "title" : "Is there costed HRH plan, integrated with the national health plan?",

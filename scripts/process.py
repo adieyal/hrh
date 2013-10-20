@@ -26,6 +26,26 @@ questions:
         md += """ - title: <a href="%(href)s">%(title)s</a>
    text: "%(text)s"
 """ % ctx
+
+    if "decisionbox" in el:
+        md += """links:
+  qno: %(no)s
+  qyes: %(yes)s
+  qdontknow: %(dontknow)s
+""" % el["decisionbox"]
+
+    if "topics" in el:
+        md += """topics:
+"""
+        for topic in el["topics"]:
+            md += " - %s\n" % topic["title"]
+
+    if "resources" in el:
+        md += """resources:
+"""
+        for resource in el["resources"]:
+            md += " - %s\n" % resource["title"]
+
     md += "---"
     return md
 
@@ -43,10 +63,8 @@ for html in glob("*.html"):
 graph = json.load(open(sys.argv[1]))
 stack = ["0"]
 
-while len(stack) > 0:
-    idx = stack.pop()
+for idx in graph.keys():
     el = graph[idx]
-    stack.extend(map(str, el["links"]))
 
     filename = "%s.html" % idx
     if idx == "0": filename= "index.html"
