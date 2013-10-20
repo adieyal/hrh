@@ -6,22 +6,7 @@ layout: base
 <div class="row">
     <div class="col-md-9">
         {{ content }}
-        <div class="panel panel-default top-buffer">
-            <div class="panel-heading">{{ page.question }}</div>
-            <div class="panel-body">
-                <div class="row marketing">
-                    <div class="col-md-4">
-                        <h4><a href="{{ page.links.qyes }}">Yes</a></h4>
-                    </div>
-                    <div class="col-md-4">
-                        <h4><a href="{{ page.links.qno }}">No</a></h4>
-                    </div>
-                    <div class="col-md-4">
-                        <h4><a href="{{ page.links.qdontknow }}">Don't know</a></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include decisionbox.html %}
     </div>
 
     <div class="col-md-3">
@@ -48,18 +33,6 @@ layout: base
                 </ul>
                 </div>
             {% endif %}
-        </div>
-        <div>
-            <div class="contextbox">
-                <h4 class="text-center">For Further Assistance</h4>
-                <div style="margin-left:5px">
-                    <p>Tim Shorten</p>
-                    <p>Consultant</p>
-                    <img class="img-thumbnail"  src="assets/images/tim.jpg"/>
-                    <p><a href="mailto:tjshorten@gmail.com">tjshorten@gmail.com</a></p>
-                    <p>+44 7968 742955</p>
-                </div>
-            </div>
         </div>
     </div>
 </div>
