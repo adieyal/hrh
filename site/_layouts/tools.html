@@ -1,0 +1,54 @@
+---
+layout: base
+---
+
+<h1>{{ page.title }}</h1>
+<div class="row">
+    <div class="col-md-9">
+        {{ content }}
+        <h2>Description of the tool</h2>
+        {{ page.description }}
+
+        <h2>Prerequisites</h2>
+        <ul>
+        {% for pr in page.prerequisties %}
+            <li>{{ pr }}</li>
+        {% endfor %}
+        </ul>
+
+        <h2>How long does it take?</h2>
+        {{ page.howlong }}
+
+        <h2>Examples of implementation</h2>
+        {{ page.examples }}
+
+    </div>
+
+    <div class="col-md-3">
+        <div>
+        {% if page.topics %}
+            <div class="contextbox">
+            <h4 class="text-center">Related Topics</h4>
+            <ul>
+            {% for topic in page.topics %}
+                <li><a href="#">{{ topic }}</a></li>
+            {% endfor %}
+            </ul>
+            </div>
+        {% endif %}
+        </div>
+        <div>
+            <div class="contextbox">
+                <h4 class="text-center">For Further Assistance</h4>
+                <div style="margin-left:5px">
+                    <p>Tim Shorten</p>
+                    <p>Consultant</p>
+                    <img class="img-thumbnail"  src="/assets/images/tim.jpg"/>
+                    <p><a href="mailto:tjshorten@gmail.com">tjshorten@gmail.com</a></p>
+                    <p>+44 7968 742955</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
