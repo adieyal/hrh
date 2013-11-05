@@ -17,11 +17,34 @@
       <script src="/assets/js/html5shiv.js"></script>
       <script src="/assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.cookie.js"></script>
+    <script>
+    $(document).ready(function() {
+	$.cookie.json = true;
+	var crumbs = $.cookie('breadcrumbs');
+	if (!crumbs) { crumbs = []; }
+	crumbs.push([document.title, window.location.href]);
+	if (crumbs.length > 3) { crumbs.shift(); }
+	$.cookie('breadcrumbs', crumbs, { path: '/' });
+	
+	$('#breadcrumbs').html('');
+	$(crumbs).each(function() {
+	    var divider = $('<span/>').addClass('divider').text(' > ');
+	    var crumb = $('<span/>').append(
+		$('<a/>').attr('href', this[1]).text(this[0])
+	    );
+	    $('#breadcrumbs').append(crumb);
+	    $('#breadcrumbs').append(divider);
+	});
+    });
+    </script>
   </head>
   <body>
     <div id="content">
       {% include header.html %}
-      {% if page.breadcrumbs %}{% include breadcrumbs.html %}{% endif %}
+      {% include breadcrumbs.html %}
       {% if page.heading %}{% include box.html %}{% endif %}
       {% if page.question %}{% include question.html %}{% endif %}
       <div id="main">

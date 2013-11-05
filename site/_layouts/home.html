@@ -17,6 +17,15 @@
       <script src="/assets/js/html5shiv.js"></script>
       <script src="/assets/js/respond.min.js"></script>
     <![endif]-->
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.cookie.js"></script>
+    <script>
+    $(document).ready(function() {
+	$.cookie.json = true;
+	$.cookie('breadcrumbs', [], { path: '/' });
+    });
+    </script>
   </head>
   <body>
     <div id="content">

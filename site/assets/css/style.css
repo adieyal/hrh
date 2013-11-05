@@ -316,6 +316,8 @@ form.search.home-search {
         color: #b6da53; }
       #main-full #main-image ul li:nth-child(3) {
         color: #68c0b4; }
+      #main-full #main-image ul li:nth-child(4) {
+        color: #888888; }
 #main-full p {
   padding: 0 10px;
   margin: 10px 0; }
