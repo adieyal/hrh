@@ -21,15 +21,15 @@
   <body>
     <div id="content">
       {% include header.html %}
-      {% if page.breadcrumbs %}{% include breadcrumbs.html %}{% endif %}
-      {% if page.heading %}{% include box.html %}{% endif %}
-      {% if page.question %}{% include question.html %}{% endif %}
-      <div id="main">
-	{% include content.html %}
-	{% include sidebar.html %}
+      <form method="get" action="/search/" class="search home-search">
+	<button type="submit">Search</button>
+	<input name="q"/>
+      </form>
+      <div style="clear: both; height: 0;"></div>
+      <div id="main-full">
+	{{ content }}
       </div>
       {% include footer.html %}
     </div>
   </body>
 </html>
-

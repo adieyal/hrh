@@ -1,0 +1,12 @@
+      <div id="question"{% if page.question.style %} class="question-{{ page.question.style }}"{% endif %}>
+	{{ page.question.text }}<br/>
+	{% if page.question.url_yes %}
+	<a href="{{ page.question.url_yes }}"><button>Yes</button></a>
+	{% endif %}
+	{% if page.question.url_no %}
+	<a href="{{ page.question.url_no }}"><button>No</button></a>
+	{% endif %}
+	{% if page.question.url_dontknow %}
+	<a href="{{ page.question.url_dontknow }}"><button>Don't know</button></a>
+	{% endif %}
+      </div>

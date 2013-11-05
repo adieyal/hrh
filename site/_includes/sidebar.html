@@ -1,0 +1,36 @@
+	<div id="main-sidebar">
+	  <form method="get" action="/search/" class="search">
+	    <button type="submit">Search</button>
+	    <input name="q"/>
+	  </form>
+	  {% if page.related %}
+	  <h1>Related Topics</h1>
+	  <ul>
+	    {% for item in page.related %}
+	    <li>
+	      <a href="{{ item.url }}">{{ item.text }}</a>
+	    </li>
+	    {% endfor %}
+	  </ul>
+	  {% endif %}
+	  {% if page.resources %}
+	  <h1>Resources</h1>
+	  <ul>
+	    {% for item in page.resources %}
+	    <li>
+	      <a href="{{ item.url }}">{{ item.text }}</a>
+	    </li>
+	    {% endfor %}
+	  </ul>
+	  {% endif %}
+	  {% if page.contact %}
+	  <div id="main-sidebar-contact">
+	    <h1>For further assistance</h1>
+	    <img src="/assets/images/tim.jpg" alt="Tim Shorten"/>
+	    <strong>Tim Shorten</strong><br/>
+	    <em>Consultant</em><br/>
+	    <a ref="mailto:tjshorten@gmail.com">tjshorten@gmail.com</a><br/>
+	    T: +44 7968 742955
+	  </div>
+	  {% endif %}
+	</div>
