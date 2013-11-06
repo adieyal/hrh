@@ -113,7 +113,8 @@ form.search.home-search {
   line-height: 75px; }
   #heading img {
     margin-left: -200px;
-    height: 75px;
+    margin-top: 10px;
+    height: 55px;
     float: left; }
 
 #tabs {
@@ -127,7 +128,7 @@ form.search.home-search {
     margin: 0; }
     #tabs ul li {
       float: left;
-      width: 112.28571px;
+      width: 98px;
       box-sizing: border-box;
       background: #a8d0f0;
       list-style: none;
@@ -151,6 +152,8 @@ form.search.home-search {
         /* IE 10 */
         background: -o-linear-gradient(top, #356ebf, #356ebf 50%, #314385);
         /* Opera 11.10+ */ }
+      #tabs ul li:nth-child(8) {
+        padding: 0; }
   #tabs:after {
     content: '';
     display: block;
