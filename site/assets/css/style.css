@@ -43,6 +43,76 @@ p {
   padding: 0;
   margin: 10px 0; }
 
+ul.list-oversize {
+  padding: 0;
+  margin: 10px 0; }
+  ul.list-oversize li {
+    padding: 20px 0 20px 40px;
+    margin: 0;
+    list-style: none;
+    background: url("/assets/images/bullet-orange.svg") 5px center no-repeat;
+    border-bottom: 1px solid #333333; }
+    ul.list-oversize li .list-bullet-grey {
+      background: url("/assets/images/bullet-grey.svg") 5px center no-repeat; }
+      ul.list-oversize li .list-bullet-grey:hover {
+        background-color: #E1E1E1;
+        /* Fallback */
+        background: url("/assets/images/bullet-grey.svg") 5px center no-repeat, -webkit-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* Safari 5.1+, Chrome 10+ */
+        background: url("/assets/images/bullet-grey.svg") 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(rgba(225, 225, 225, 0)));
+        /* Safari 4-5, Chrome 1-9 */
+        background: url("/assets/images/bullet-grey.svg") 5px center no-repeat, -moz-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* Firefox 3.6+ */
+        background: url("/assets/images/bullet-grey.svg") 5px center no-repeat, -ms-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* IE 10 */
+        background: url("/assets/images/bullet-grey.svg") 5px center no-repeat, -o-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* Opera 11.10+ */ }
+    ul.list-oversize li .list-bullet-orange {
+      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat; }
+      ul.list-oversize li .list-bullet-orange:hover {
+        background-color: #E1E1E1;
+        /* Fallback */
+        background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -webkit-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* Safari 5.1+, Chrome 10+ */
+        background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(rgba(225, 225, 225, 0)));
+        /* Safari 4-5, Chrome 1-9 */
+        background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -moz-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* Firefox 3.6+ */
+        background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -ms-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* IE 10 */
+        background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -o-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* Opera 11.10+ */ }
+    ul.list-oversize li .list-bullet-arrow {
+      background: url("/assets/images/bullet-arrow.svg") 5px center no-repeat; }
+      ul.list-oversize li .list-bullet-arrow:hover {
+        background-color: #E1E1E1;
+        /* Fallback */
+        background: url("/assets/images/bullet-arrow.svg") 5px center no-repeat, -webkit-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* Safari 5.1+, Chrome 10+ */
+        background: url("/assets/images/bullet-arrow.svg") 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(rgba(225, 225, 225, 0)));
+        /* Safari 4-5, Chrome 1-9 */
+        background: url("/assets/images/bullet-arrow.svg") 5px center no-repeat, -moz-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* Firefox 3.6+ */
+        background: url("/assets/images/bullet-arrow.svg") 5px center no-repeat, -ms-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* IE 10 */
+        background: url("/assets/images/bullet-arrow.svg") 5px center no-repeat, -o-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+        /* Opera 11.10+ */ }
+    ul.list-oversize li:last-child {
+      border-bottom: none; }
+    ul.list-oversize li:hover {
+      background-color: #E1E1E1;
+      /* Fallback */
+      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -webkit-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+      /* Safari 5.1+, Chrome 10+ */
+      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(rgba(225, 225, 225, 0)));
+      /* Safari 4-5, Chrome 1-9 */
+      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -moz-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+      /* Firefox 3.6+ */
+      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -ms-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+      /* IE 10 */
+      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -o-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+      /* Opera 11.10+ */ }
+
 form.search input {
   padding-left: 10px;
   width: 127px;
@@ -268,7 +338,7 @@ form.search.home-search {
       padding: 0; }
       #main #main-sidebar ul li {
         list-style: none;
-        background: url(/assets/images/arrow.svg) left center no-repeat;
+        background: url("/assets/images/bullet-arrow.svg") left center no-repeat;
         padding: 7px 0 7px 20px;
         border-bottom: 1px solid #333333; }
         #main #main-sidebar ul li:last-child {

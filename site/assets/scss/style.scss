@@ -71,6 +71,71 @@ p {
     margin: 10px 0;
 }
 
+ul.list-oversize {
+    padding: 0;
+    margin: 10px 0;
+    
+    li {
+	padding: 20px 0 20px 40px;
+	margin: 0;
+	list-style: none;
+	background: url('/assets/images/bullet-orange.svg') 5px center no-repeat;
+	border-bottom: 1px solid $black;
+		
+	.list-bullet-grey {
+	    background: url('/assets/images/bullet-grey.svg') 5px center no-repeat;
+	
+	    &:hover {
+		background-color: #E1E1E1; /* Fallback */
+		background: url('/assets/images/bullet-grey.svg') 5px center no-repeat, -webkit-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Safari 5.1+, Chrome 10+ */
+		background: url('/assets/images/bullet-grey.svg') 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#E1E1E1), to(rgba(225,225,225,0))); /* Safari 4-5, Chrome 1-9 */
+		background: url('/assets/images/bullet-grey.svg') 5px center no-repeat, -moz-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Firefox 3.6+ */
+		background: url('/assets/images/bullet-grey.svg') 5px center no-repeat, -ms-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* IE 10 */
+		background: url('/assets/images/bullet-grey.svg') 5px center no-repeat, -o-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Opera 11.10+ */
+	    }
+	}
+	
+	.list-bullet-orange {
+	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat;
+	    
+	    &:hover {
+		background-color: #E1E1E1; /* Fallback */
+		background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -webkit-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Safari 5.1+, Chrome 10+ */
+		background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#E1E1E1), to(rgba(225,225,225,0))); /* Safari 4-5, Chrome 1-9 */
+		background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -moz-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Firefox 3.6+ */
+		background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -ms-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* IE 10 */
+		background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -o-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Opera 11.10+ */
+	    }
+	}
+	
+	.list-bullet-arrow {
+	    background: url('/assets/images/bullet-arrow.svg') 5px center no-repeat;
+	    
+	    &:hover {
+		background-color: #E1E1E1; /* Fallback */
+		background: url('/assets/images/bullet-arrow.svg') 5px center no-repeat, -webkit-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Safari 5.1+, Chrome 10+ */
+		background: url('/assets/images/bullet-arrow.svg') 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#E1E1E1), to(rgba(225,225,225,0))); /* Safari 4-5, Chrome 1-9 */
+		background: url('/assets/images/bullet-arrow.svg') 5px center no-repeat, -moz-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Firefox 3.6+ */
+		background: url('/assets/images/bullet-arrow.svg') 5px center no-repeat, -ms-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* IE 10 */
+		background: url('/assets/images/bullet-arrow.svg') 5px center no-repeat, -o-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Opera 11.10+ */
+	    }
+	}
+	
+	&:last-child {
+	    border-bottom: none;
+	}
+	
+	&:hover {
+	    background-color: #E1E1E1; /* Fallback */
+	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -webkit-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Safari 5.1+, Chrome 10+ */
+	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#E1E1E1), to(rgba(225,225,225,0))); /* Safari 4-5, Chrome 1-9 */
+	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -moz-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Firefox 3.6+ */
+	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -ms-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* IE 10 */
+	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -o-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Opera 11.10+ */
+	}
+    }
+}
+
 form.search {
     input {
 	padding-left: 10px;
@@ -310,7 +375,7 @@ form.search {
 	    
 	    li {
 		list-style: none;
-		background: url(/assets/images/arrow.svg) left center no-repeat;
+		background: url('/assets/images/bullet-arrow.svg') left center no-repeat;
 		padding: 7px 0 7px 20px;
 		border-bottom: 1px solid $black;
 		
