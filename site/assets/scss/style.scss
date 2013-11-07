@@ -24,7 +24,7 @@ body {
 }
 
 a {
-    color: darken($grey, 40%);
+    color: $dark_orange;
     text-decoration: none;
     
     &:hover {
@@ -32,7 +32,7 @@ a {
     }
     
     &:visited {
-	color: darken($grey, 40%);	
+	color: darken($dark_orange, 5%);	
     }
 }
 
@@ -75,11 +75,19 @@ ul.list-oversize {
     padding: 0;
     margin: 10px 0;
     
+    a {
+	color: darken($grey, 40%);
+    
+	&:visited {
+	    color: darken($grey, 40%);	
+	}
+    }
+    
     li {
 	padding: 20px 0 20px 40px;
 	margin: 0;
 	list-style: none;
-	background: url('/assets/images/bullet-orange.svg') 5px center no-repeat;
+	background: url('/assets/images/bullet-grey.svg') 5px center no-repeat;
 	border-bottom: 1px solid $black;
 		
 	.list-bullet-grey {
@@ -127,11 +135,11 @@ ul.list-oversize {
 	
 	&:hover {
 	    background-color: #E1E1E1; /* Fallback */
-	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -webkit-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Safari 5.1+, Chrome 10+ */
-	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#E1E1E1), to(rgba(225,225,225,0))); /* Safari 4-5, Chrome 1-9 */
-	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -moz-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Firefox 3.6+ */
-	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -ms-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* IE 10 */
-	    background: url('/assets/images/bullet-orange.svg') 5px center no-repeat, -o-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Opera 11.10+ */
+	    background: url('/assets/images/bullet-grey.svg') 5px center no-repeat, -webkit-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Safari 5.1+, Chrome 10+ */
+	    background: url('/assets/images/bullet-grey.svg') 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#E1E1E1), to(rgba(225,225,225,0))); /* Safari 4-5, Chrome 1-9 */
+	    background: url('/assets/images/bullet-grey.svg') 5px center no-repeat, -moz-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Firefox 3.6+ */
+	    background: url('/assets/images/bullet-grey.svg') 5px center no-repeat, -ms-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* IE 10 */
+	    background: url('/assets/images/bullet-grey.svg') 5px center no-repeat, -o-linear-gradient(top, #E1E1E1, rgba(225,225,225,0)); /* Opera 11.10+ */
 	}
     }
 }
@@ -295,7 +303,7 @@ form.search {
     button {
 	width: 100px;
 	border: 1px solid $white;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding: 4px;
 	margin: 2px 0;
 	color: $dark_blue;

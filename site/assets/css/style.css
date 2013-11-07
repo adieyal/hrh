@@ -6,12 +6,12 @@ body {
   padding: 20px 0; }
 
 a {
-  color: #413f40;
+  color: #e18013;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
   a:visited {
-    color: #413f40; }
+    color: #c97311; }
 
 p {
   color: #747273; }
@@ -46,11 +46,15 @@ p {
 ul.list-oversize {
   padding: 0;
   margin: 10px 0; }
+  ul.list-oversize a {
+    color: #413f40; }
+    ul.list-oversize a:visited {
+      color: #413f40; }
   ul.list-oversize li {
     padding: 20px 0 20px 40px;
     margin: 0;
     list-style: none;
-    background: url("/assets/images/bullet-orange.svg") 5px center no-repeat;
+    background: url("/assets/images/bullet-grey.svg") 5px center no-repeat;
     border-bottom: 1px solid #333333; }
     ul.list-oversize li .list-bullet-grey {
       background: url("/assets/images/bullet-grey.svg") 5px center no-repeat; }
@@ -102,15 +106,15 @@ ul.list-oversize {
     ul.list-oversize li:hover {
       background-color: #E1E1E1;
       /* Fallback */
-      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -webkit-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+      background: url("/assets/images/bullet-grey.svg") 5px center no-repeat, -webkit-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
       /* Safari 5.1+, Chrome 10+ */
-      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(rgba(225, 225, 225, 0)));
+      background: url("/assets/images/bullet-grey.svg") 5px center no-repeat, -webkit-gradient(linear, left top, left bottom, from(#e1e1e1), to(rgba(225, 225, 225, 0)));
       /* Safari 4-5, Chrome 1-9 */
-      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -moz-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+      background: url("/assets/images/bullet-grey.svg") 5px center no-repeat, -moz-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
       /* Firefox 3.6+ */
-      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -ms-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+      background: url("/assets/images/bullet-grey.svg") 5px center no-repeat, -ms-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
       /* IE 10 */
-      background: url("/assets/images/bullet-orange.svg") 5px center no-repeat, -o-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
+      background: url("/assets/images/bullet-grey.svg") 5px center no-repeat, -o-linear-gradient(top, #e1e1e1, rgba(225, 225, 225, 0));
       /* Opera 11.10+ */ }
 
 form.search input {
@@ -262,7 +266,7 @@ form.search.home-search {
   #question button {
     width: 100px;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 4px;
     margin: 2px 0;
     color: #3871c1;
