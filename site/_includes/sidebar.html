@@ -5,6 +5,7 @@
 	  </form>
 	  {% if page.related %}
 	  <h1>Related Topics</h1>
+	  <p>Have you also considered...</p>
 	  <ul>
 	    {% for item in page.related %}
 	    <li>
@@ -18,7 +19,7 @@
 	  <ul>
 	    {% for item in page.resources %}
 	    <li>
-	      <a href="{{ item.url }}">{{ item.text }}</a>
+	      <a href="{{ item.url }}" target="_blank">{{ item.text }}</a>
 	    </li>
 	    {% endfor %}
 	  </ul>
