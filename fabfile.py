@@ -8,14 +8,14 @@ env.user = 'adi'
 env.hosts = ['197.221.34.5:2224']
 project_root = os.path.dirname(__file__)
 gen_directory = os.path.join(project_root, "site")
-site_root = os.path.join(gen_directory, "_site")
+site_root = "_site"
 remote_path = "/var/www/hrh.burgercom.co.za/"
 scripts_dir = os.path.join(project_root, "scripts")
 generate_script = os.path.join(scripts_dir, "process.py")
 map_file = os.path.join(scripts_dir, "map.json")
 
 def deploy():
-    local("jekyll build")
+    local("make site")
     rsync_project(remote_path, site_root, delete=True)
 
 def generate():
